@@ -53,8 +53,8 @@ npm run test:e2e:report      # open the last HTML report
 ## Layout
 
 - `src/app/` — App Router pages, layouts, CSS Modules. Home page lives at `src/app/page.tsx`.
-- `src/content/` — JSON content (currently `site.json` with name/role/tagline/nav). New section = new JSON file + a component that reads it.
-- `src/components/` — shared components (not yet created; home page inlines header + hero for now).
+- `src/content/` — JSON content. New section = new JSON file + a component that reads it. Current files: `site.json` (name/role/tagline/nav), `projects.json` (project cards).
+- `src/components/` — shared components. Each component is named `<Name>.tsx` + `<Name>.module.css`. Current: `Projects.tsx`.
 - `tests/e2e/` — Playwright specs, organized by feature (`home.spec.ts`, etc.). Selectors must use `getByTestId(...)` — never text or CSS classes.
 
 ## Git workflow

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "playwright-suite",
+    "title": "Playwright Test Suite",
+    "description": "End-to-end coverage for a multi-step checkout flow, integrated into CI with retry and trace artifacts.",
+    "image": null,
+    "githubUrl": "https://github.com/brunoengineer/example-playwright",
+    "liveUrl": null
+  },
+  {
+    "id": "api-contract-tests",
+    "title": "API Contract Tests",
+    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
+    "image": null,
+    "githubUrl": "https://github.com/brunoengineer/example-contracts",
+    "liveUrl": "https://example.com/api-contracts"
+  },
+  {
+    "id": "load-test-bench",
+    "title": "Load Test Bench",
+    "description": "K6 scenarios pushing realistic peak traffic at a staging environment, with Grafana dashboards.",
+    "image": null,
+    "githubUrl": null,
+    "liveUrl": "https://example.com/load-bench"
+  }
+]

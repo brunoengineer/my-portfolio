@@ -31,7 +31,12 @@ The static site is written to `out/`. Deploy the contents of `out/` to GitHub Pa
 All content lives in JSON under `src/content/`. Edit those files; no code changes needed for adding/removing items.
 
 - `src/content/site.json` — name, role, tagline, navbar links
-- (further JSON files added per component as the site grows: projects, stack, timeline, testimonials, etc.)
+- `src/content/projects.json` — project cards (title, description, optional image/GitHub/live links)
+- (further JSON files added per component as the site grows: stack, timeline, testimonials, etc.)
+
+### Adding a project
+
+Append an entry to `src/content/projects.json`. `id` must be unique (it is used in `data-testid` values and as the React key). Set `image` to a path under `public/` or `null` for the gradient placeholder. Set `githubUrl` and/or `liveUrl` to a URL, or `null` to hide that link.
 
 ## Project structure
 

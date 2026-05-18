@@ -1,5 +1,6 @@
 import site from '@/content/site.json';
 import styles from './page.module.css';
+import Projects from '@/components/Projects';
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
         <h1 className={styles.heroName} data-testid="hero-name">{site.name}</h1>
         <p className={styles.heroTagline} data-testid="hero-tagline">{site.tagline}</p>
       </section>
+
+      <Projects />
     </main>
   );
 }
