@@ -1,0 +1,10 @@
+{
+  "name": "Bruno Peres",
+  "role": "QA Engineer",
+  "tagline": "Confidence for each release",
+  "nav": [
+    { "id": "home", "label": "Home", "href": "#home" },
+    { "id": "about", "label": "About", "href": "#about" },
+    { "id": "contact", "label": "Contact", "href": "#contact" }
+  ]
+}

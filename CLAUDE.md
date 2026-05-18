@@ -34,7 +34,28 @@ Home (photo, name, role, tagline, navbar) · Projects · Stack (clickable logos 
 
 ## Commands
 
-None yet — project is not scaffolded. Once `package.json` exists, add the actual `dev` / `build` / `export` / `test` / `test:e2e` commands here.
+```powershell
+npm install                  # first time only
+npx playwright install       # first time only — downloads browser binaries
+npm run dev                  # dev server at http://localhost:3000
+npm run build                # static export to ./out (deploy this dir to GH Pages)
+npm run test:e2e             # Playwright tests headless (auto-starts dev server)
+npm run test:e2e:ui          # Playwright UI mode (interactive)
+npm run test:e2e:report      # open the last HTML report
+```
+
+`output: 'export'` is set in `next.config.js`, so `next start` is not used — to preview the production build, serve `out/` with any static server (e.g. `npx serve out`).
+
+## CI
+
+`.github/workflows/playwright.yml` runs the Playwright suite on every push and PR against `main` / `master`. Node 20, Chromium only (matches `playwright.config.ts`), HTML report uploaded as an artifact (`playwright-report`, 30-day retention). `npm ci` requires `package-lock.json` to be committed.
+
+## Layout
+
+- `src/app/` — App Router pages, layouts, CSS Modules. Home page lives at `src/app/page.tsx`.
+- `src/content/` — JSON content (currently `site.json` with name/role/tagline/nav). New section = new JSON file + a component that reads it.
+- `src/components/` — shared components (not yet created; home page inlines header + hero for now).
+- `tests/e2e/` — Playwright specs, organized by feature (`home.spec.ts`, etc.). Selectors must use `getByTestId(...)` — never text or CSS classes.
 
 ## Git workflow
 
