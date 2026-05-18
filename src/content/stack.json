@@ -1,0 +1,134 @@
+[
+  {
+    "id": "html",
+    "name": "HTML",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "iconSlug": "html5"
+  },
+  {
+    "id": "css",
+    "name": "CSS",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "iconSlug": "css3"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "iconSlug": "javascript"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "url": "https://www.typescriptlang.org/",
+    "iconSlug": "typescript"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "url": "https://react.dev/",
+    "iconSlug": "react"
+  },
+  {
+    "id": "figma",
+    "name": "Figma",
+    "url": "https://www.figma.com/",
+    "iconSlug": "figma"
+  },
+  {
+    "id": "postman",
+    "name": "Postman",
+    "url": "https://www.postman.com/",
+    "iconSlug": "postman"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "url": "https://nodejs.org/",
+    "iconSlug": "nodedotjs"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "url": "https://www.docker.com/",
+    "iconSlug": "docker"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "url": "https://git-scm.com/",
+    "iconSlug": "git"
+  },
+  {
+    "id": "cypress",
+    "name": "Cypress",
+    "url": "https://www.cypress.io/",
+    "iconSlug": "cypress"
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "url": "https://playwright.dev/",
+    "iconSlug": "playwright"
+  },
+  {
+    "id": "browserstack",
+    "name": "BrowserStack",
+    "url": "https://www.browserstack.com/",
+    "iconSlug": "browserstack"
+  },
+  {
+    "id": "xray",
+    "name": "Xray",
+    "url": "https://www.getxray.app/",
+    "iconSlug": null
+  },
+  {
+    "id": "testrail",
+    "name": "TestRail",
+    "url": "https://www.testrail.com/",
+    "iconSlug": null
+  },
+  {
+    "id": "k6",
+    "name": "K6",
+    "url": "https://k6.io/",
+    "iconSlug": "k6"
+  },
+  {
+    "id": "claude-code",
+    "name": "Claude Code",
+    "url": "https://claude.com/claude-code",
+    "iconSlug": "claude"
+  },
+  {
+    "id": "github-copilot",
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "iconSlug": "githubcopilot"
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "url": "https://grafana.com/",
+    "iconSlug": "grafana"
+  },
+  {
+    "id": "confluence",
+    "name": "Confluence",
+    "url": "https://www.atlassian.com/software/confluence",
+    "iconSlug": "confluence"
+  },
+  {
+    "id": "jira",
+    "name": "Jira",
+    "url": "https://www.atlassian.com/software/jira",
+    "iconSlug": "jira"
+  },
+  {
+    "id": "android-studio",
+    "name": "Android Studio",
+    "url": "https://developer.android.com/studio",
+    "iconSlug": "androidstudio"
+  }
+]

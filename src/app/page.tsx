@@ -1,6 +1,7 @@
 import site from '@/content/site.json';
 import styles from './page.module.css';
 import Projects from '@/components/Projects';
+import Stack from '@/components/Stack';
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       </section>
 
       <Projects />
+      <Stack />
     </main>
   );
 }

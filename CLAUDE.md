@@ -53,8 +53,12 @@ npm run test:e2e:report      # open the last HTML report
 ## Layout
 
 - `src/app/` — App Router pages, layouts, CSS Modules. Home page lives at `src/app/page.tsx`.
-- `src/content/` — JSON content. New section = new JSON file + a component that reads it. Current files: `site.json` (name/role/tagline/nav), `projects.json` (project cards).
-- `src/components/` — shared components. Each component is named `<Name>.tsx` + `<Name>.module.css`. Current: `Projects.tsx`.
+- `src/content/` — JSON content. New section = new JSON file + a component that reads it. Current files: `site.json` (name/role/tagline/nav), `projects.json` (project cards), `stack.json` (tech stack items).
+- `src/components/` — shared components. Each component is named `<Name>.tsx` + `<Name>.module.css`. Current: `Projects.tsx`, `Stack.tsx`.
+
+### Stack icons
+
+The Stack component pulls logos from the [Simple Icons CDN](https://simpleicons.org/) (`https://cdn.simpleicons.org/<slug>`). Each entry in `stack.json` has an `iconSlug`: set it to the Simple Icons slug for that tool, or `null` to fall back to a styled initial (used for tools not in the Simple Icons catalog, e.g. Xray, TestRail). The CDN is an external runtime dependency — if you'd rather host SVGs yourself, drop them under `public/stack/` and switch the component to read from a local path.
 - `tests/e2e/` — Playwright specs, organized by feature (`home.spec.ts`, etc.). Selectors must use `getByTestId(...)` — never text or CSS classes.
 
 ## Git workflow

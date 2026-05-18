@@ -32,7 +32,8 @@ All content lives in JSON under `src/content/`. Edit those files; no code change
 
 - `src/content/site.json` — name, role, tagline, navbar links
 - `src/content/projects.json` — project cards (title, description, optional image/GitHub/live links)
-- (further JSON files added per component as the site grows: stack, timeline, testimonials, etc.)
+- `src/content/stack.json` — tech stack items (name, link URL, optional Simple Icons slug)
+- (further JSON files added per component as the site grows: timeline, testimonials, etc.)
 
 ### Adding a project
 
