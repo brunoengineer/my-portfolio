@@ -5,6 +5,26 @@
   margin: 0 auto;
 }
 
+.docsLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-left: 0.4rem;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.74rem;
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border: 1px solid rgba(77, 158, 255, 0.3);
+  border-radius: 6px;
+  transition: background 180ms var(--ease-out), border-color 180ms var(--ease-out);
+  white-space: nowrap;
+}
+
+.docsLink:hover {
+  background: rgba(77, 158, 255, 0.18);
+  border-color: rgba(77, 158, 255, 0.55);
+}
+
 .grid {
   list-style: none;
   padding: 0;

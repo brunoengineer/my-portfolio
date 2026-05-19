@@ -1,5 +1,7 @@
 {
   "intro": "Every push to this repo runs real tests in GitHub Actions. Click any card to replay the last CI run and jump to the full report.",
+  "docsUrl": "https://github.com/brunoengineer/my-portfolio/blob/main/docs/testing.md",
+  "docsLabel": "Read the testing docs",
   "repo": {
     "owner": "brunoengineer",
     "name": "my-portfolio"

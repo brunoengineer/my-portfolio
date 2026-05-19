@@ -221,7 +221,25 @@ export default function Tests() {
         label="quality engineering"
         title="Tests"
         testIdPrefix="tests"
-        description={tests.intro}
+        description={
+          <>
+            {tests.intro}
+            {tests.docsUrl && (
+              <>
+                {' '}
+                <a
+                  href={tests.docsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`mono ${styles.docsLink}`}
+                  data-testid="tests-docs-link"
+                >
+                  {tests.docsLabel ?? 'Read the docs'} ↗
+                </a>
+              </>
+            )}
+          </>
+        }
       />
 
       <motion.ul
