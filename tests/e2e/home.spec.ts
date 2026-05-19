@@ -18,17 +18,19 @@ test.describe('Home page', () => {
     await expect(page.getByTestId('hero-tagline')).toHaveText('Confidence for each release');
   });
 
-  test('primary nav lists Home, About, Contact in order', async ({ page }) => {
+  test('primary nav lists Home, About, Tests, Contact in order', async ({ page }) => {
     const nav = page.getByTestId('primary-nav');
     await expect(nav.getByTestId('nav-link-home')).toHaveText('Home');
     await expect(nav.getByTestId('nav-link-about')).toHaveText('About');
+    await expect(nav.getByTestId('nav-link-tests')).toHaveText('Tests');
     await expect(nav.getByTestId('nav-link-contact')).toHaveText('Contact');
-    await expect(nav.locator('a')).toHaveCount(3);
+    await expect(nav.locator('a')).toHaveCount(4);
   });
 
   test('nav links point at in-page anchors', async ({ page }) => {
     await expect(page.getByTestId('nav-link-home')).toHaveAttribute('href', '#home');
     await expect(page.getByTestId('nav-link-about')).toHaveAttribute('href', '#about');
+    await expect(page.getByTestId('nav-link-tests')).toHaveAttribute('href', '#tests');
     await expect(page.getByTestId('nav-link-contact')).toHaveAttribute('href', '#contact');
   });
 

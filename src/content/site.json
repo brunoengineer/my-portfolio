@@ -5,6 +5,7 @@
   "nav": [
     { "id": "home", "label": "Home", "href": "#home" },
     { "id": "about", "label": "About", "href": "#about" },
+    { "id": "tests", "label": "Tests", "href": "#tests" },
     { "id": "contact", "label": "Contact", "href": "#contact" }
   ]
 }

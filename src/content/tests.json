@@ -1,0 +1,33 @@
+{
+  "intro": "Every push to this repo runs real tests in GitHub Actions. Click any card to replay the last CI run and jump to the full report.",
+  "repo": {
+    "owner": "brunoengineer",
+    "name": "my-portfolio"
+  },
+  "cards": [
+    {
+      "id": "ui",
+      "title": "UI Tests",
+      "description": "Playwright end-to-end coverage across every component on this site, run on every push and PR.",
+      "workflowFile": "playwright.yml",
+      "command": "npm run test:e2e",
+      "status": "live"
+    },
+    {
+      "id": "api",
+      "title": "API Tests",
+      "description": "Newman-driven Postman collection. Wires up once a demo API target is in place.",
+      "workflowFile": "newman.yml",
+      "command": "newman run collection.json",
+      "status": "coming-soon"
+    },
+    {
+      "id": "perf",
+      "title": "Performance",
+      "description": "K6 load scenarios with summary thresholds. Coming once the API target is wired.",
+      "workflowFile": "k6.yml",
+      "command": "k6 run perf.js",
+      "status": "coming-soon"
+    }
+  ]
+}

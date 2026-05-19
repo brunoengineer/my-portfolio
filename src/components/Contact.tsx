@@ -52,7 +52,7 @@ export default function Contact() {
       aria-labelledby="contact-heading"
     >
       <SectionHeading
-        number="04"
+        number="05"
         label="get in touch"
         title="Contact"
         testIdPrefix="contact"
