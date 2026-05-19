@@ -1,0 +1,10 @@
+{
+  "bio": "I'm a Senior QA Engineer at Betsson in Estonia, with 10+ years across high-stakes environments — from mission-critical Brazilian Air Force systems to iGaming platforms serving thousands of stakeholders. I work the full SDLC: shaping requirements, automating browser and API tests, mentoring teams toward releases that don't need crossed fingers.",
+  "extras": "ISTQB Foundation Level certified. Recently completed Full-Stack (IBM) and Web Development (University of Michigan) specialisations. Currently studying mobile testing with Appium, Android Studio, and Xcode.",
+  "stats": [
+    { "id": "years", "value": "10+", "label": "years in QA" },
+    { "id": "integrations", "value": "25+", "label": "integrations validated" },
+    { "id": "audience", "value": "100+", "label": "sprint demo audience" },
+    { "id": "cert", "value": "ISTQB", "label": "CTFL certified" }
+  ]
+}

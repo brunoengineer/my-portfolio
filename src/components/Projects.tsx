@@ -97,7 +97,7 @@ export default function Projects() {
       aria-labelledby="projects-heading"
     >
       <SectionHeading
-        number="01"
+        number="02"
         label="selected work"
         title="Projects"
         testIdPrefix="projects"

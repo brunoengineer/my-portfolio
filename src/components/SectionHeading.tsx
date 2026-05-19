@@ -1,3 +1,4 @@
+import type { ReactNode } from 'react';
 import styles from './SectionHeading.module.css';
 import Eyebrow from './Eyebrow';
 
@@ -6,7 +7,7 @@ type Props = {
   label: string;
   title: string;
   testIdPrefix: string;
-  description?: string;
+  description?: ReactNode;
 };
 
 export default function SectionHeading({ number, label, title, description, testIdPrefix }: Props) {
@@ -17,10 +18,10 @@ export default function SectionHeading({ number, label, title, description, test
       <h2 id={id} className={styles.title} data-testid={id}>
         {title}
       </h2>
-      {description && (
-        <p className={styles.desc} data-testid={`${testIdPrefix}-desc`}>
+      {description !== undefined && description !== null && description !== '' && (
+        <div className={styles.desc} data-testid={`${testIdPrefix}-desc`}>
           {description}
-        </p>
+        </div>
       )}
     </div>
   );

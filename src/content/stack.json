@@ -3,137 +3,159 @@
     "id": "html",
     "name": "HTML",
     "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    "iconSlug": "html5"
+    "iconSlug": "html5",
+    "hoverText": "Semantic, accessible markup as the foundation of testable UI."
   },
   {
     "id": "css",
     "name": "CSS",
     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
     "iconSlug": null,
-    "iconPath": "/stack/css.svg"
+    "iconPath": "/stack/css.svg",
+    "hoverText": "Layout, motion, and design systems — built mobile-first."
   },
   {
     "id": "javascript",
     "name": "JavaScript",
     "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "iconSlug": "javascript"
+    "iconSlug": "javascript",
+    "hoverText": "The language powering most of my automation and tooling."
   },
   {
     "id": "typescript",
     "name": "TypeScript",
     "url": "https://www.typescriptlang.org/",
-    "iconSlug": "typescript"
+    "iconSlug": "typescript",
+    "hoverText": "Types as a safety net for tests and product code alike."
   },
   {
     "id": "react",
     "name": "React",
     "url": "https://react.dev/",
-    "iconSlug": "react"
+    "iconSlug": "react",
+    "hoverText": "Component-driven UI where state is observable and testable."
   },
   {
     "id": "figma",
     "name": "Figma",
     "url": "https://www.figma.com/",
-    "iconSlug": "figma"
+    "iconSlug": "figma",
+    "hoverText": "Design handoff and visual reference for UI tests."
   },
   {
     "id": "postman",
     "name": "Postman",
     "url": "https://www.postman.com/",
-    "iconSlug": "postman"
+    "iconSlug": "postman",
+    "hoverText": "API exploration and contract testing across services."
   },
   {
     "id": "nodejs",
     "name": "Node.js",
     "url": "https://nodejs.org/",
-    "iconSlug": "nodedotjs"
+    "iconSlug": "nodedotjs",
+    "hoverText": "Runtime for my test tooling, scripts, and CI helpers."
   },
   {
     "id": "docker",
     "name": "Docker",
     "url": "https://www.docker.com/",
-    "iconSlug": "docker"
+    "iconSlug": "docker",
+    "hoverText": "Reproducible test environments and CI containers."
   },
   {
     "id": "git",
     "name": "Git",
     "url": "https://git-scm.com/",
-    "iconSlug": "git"
+    "iconSlug": "git",
+    "hoverText": "Branching, reviews, and traceable history for every change."
   },
   {
     "id": "cypress",
     "name": "Cypress",
     "url": "https://www.cypress.io/",
-    "iconSlug": "cypress"
+    "iconSlug": "cypress",
+    "hoverText": "E2E framework I've used for component and integration tests."
   },
   {
     "id": "playwright",
     "name": "Playwright",
     "url": "https://playwright.dev/",
     "iconSlug": null,
-    "iconPath": "/stack/playwright.svg"
+    "iconPath": "/stack/playwright.svg",
+    "hoverText": "My main browser-automation framework — fast, parallel, reliable."
   },
   {
     "id": "browserstack",
     "name": "BrowserStack",
     "url": "https://www.browserstack.com/",
     "iconSlug": null,
-    "iconPath": "/stack/browserstack.svg"
+    "iconPath": "/stack/browserstack.svg",
+    "hoverText": "Cross-browser and real-device coverage on demand."
   },
   {
     "id": "xray",
     "name": "Xray",
     "url": "https://www.getxray.app/",
     "iconSlug": null,
-    "iconPath": "/stack/xray.svg"
+    "iconPath": "/stack/xray.svg",
+    "hoverText": "Test management inside Jira — traceability from story to result."
   },
   {
     "id": "testrail",
     "name": "TestRail",
     "url": "https://www.testrail.com/",
     "iconSlug": null,
-    "iconPath": "/stack/testrail.svg"
+    "iconPath": "/stack/testrail.svg",
+    "hoverText": "Structured test-case management and run reporting."
   },
   {
     "id": "k6",
     "name": "K6",
     "url": "https://k6.io/",
-    "iconSlug": "k6"
+    "iconSlug": "k6",
+    "hoverText": "Load and performance testing with scriptable scenarios."
   },
   {
     "id": "claude-code",
     "name": "Claude Code",
     "url": "https://claude.com/claude-code",
-    "iconSlug": "claude"
+    "iconSlug": "claude",
+    "hoverText": "AI pair-programmer for refactors, tests, and design work."
   },
   {
     "id": "github-copilot",
     "name": "GitHub Copilot",
     "url": "https://github.com/features/copilot",
-    "iconSlug": "githubcopilot"
+    "iconSlug": "githubcopilot",
+    "hoverText": "Inline AI completions in the editor for everyday flow."
   },
   {
     "id": "grafana",
     "name": "Grafana",
     "url": "https://grafana.com/",
-    "iconSlug": "grafana"
+    "iconSlug": "grafana",
+    "hoverText": "Dashboards I watch to see how behavior changes after a release."
   },
   {
     "id": "confluence",
     "name": "Confluence",
     "url": "https://www.atlassian.com/software/confluence",
-    "iconSlug": "confluence"
+    "iconSlug": "confluence",
+    "hoverText": "Test plans, runbooks, and shared team knowledge."
   },
   {
     "id": "jira",
     "name": "Jira",
     "url": "https://www.atlassian.com/software/jira",
-    "iconSlug": "jira"
+    "iconSlug": "jira",
+    "hoverText": "Where bugs, stories, and test results live."
   },
   {
     "id": "android-studio",
     "name": "Android Studio",
     "url": "https://developer.android.com/studio",
-    "iconSlug": "androidstudio"
+    "iconSlug": "androidstudio",
+    "hoverText": "Native Android tooling for mobile QA work."
   }
 ]

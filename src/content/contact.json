@@ -1,0 +1,29 @@
+{
+  "intro": "Hiring, collaborating, or just curious about QA? The fastest way to reach me.",
+  "channels": [
+    {
+      "id": "email",
+      "label": "email",
+      "value": "brunoqaengineer@gmail.com",
+      "href": "mailto:brunoqaengineer@gmail.com"
+    },
+    {
+      "id": "linkedin",
+      "label": "linkedin",
+      "value": "/in/brunopereschristino",
+      "href": "https://www.linkedin.com/in/brunopereschristino/"
+    },
+    {
+      "id": "github",
+      "label": "github",
+      "value": "@brunoengineer",
+      "href": "https://github.com/brunoengineer"
+    },
+    {
+      "id": "cv",
+      "label": "resume",
+      "value": "View PDF",
+      "href": "https://drive.google.com/file/d/168K3jGvOQ58GY-lWG64zLoihnrOo-m4H/view"
+    }
+  ]
+}
