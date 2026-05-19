@@ -1,0 +1,27 @@
+.wrap {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  margin: 0;
+  background: linear-gradient(120deg, #ffffff 0%, #ffffff 60%, var(--accent-strong) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.desc {
+  margin: 0.15rem 0 0;
+  color: var(--text-md);
+  font-size: 1rem;
+  max-width: 60ch;
+  line-height: 1.55;
+}

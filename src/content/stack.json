@@ -9,7 +9,8 @@
     "id": "css",
     "name": "CSS",
     "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
-    "iconSlug": "css3"
+    "iconSlug": null,
+    "iconPath": "/stack/css.svg"
   },
   {
     "id": "javascript",
@@ -69,25 +70,29 @@
     "id": "playwright",
     "name": "Playwright",
     "url": "https://playwright.dev/",
-    "iconSlug": "playwright"
+    "iconSlug": null,
+    "iconPath": "/stack/playwright.svg"
   },
   {
     "id": "browserstack",
     "name": "BrowserStack",
     "url": "https://www.browserstack.com/",
-    "iconSlug": "browserstack"
+    "iconSlug": null,
+    "iconPath": "/stack/browserstack.svg"
   },
   {
     "id": "xray",
     "name": "Xray",
     "url": "https://www.getxray.app/",
-    "iconSlug": null
+    "iconSlug": null,
+    "iconPath": "/stack/xray.svg"
   },
   {
     "id": "testrail",
     "name": "TestRail",
     "url": "https://www.testrail.com/",
-    "iconSlug": null
+    "iconSlug": null,
+    "iconPath": "/stack/testrail.svg"
   },
   {
     "id": "k6",

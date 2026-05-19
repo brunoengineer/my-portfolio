@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Bruno/Documents/projects/**)",
+      "Read(//c/Users/Bruno/Desktop/ESTUDOS/Developer/**)",
+      "WebFetch(domain:brunoengineer.github.io)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}

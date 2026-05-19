@@ -4,13 +4,15 @@
       "id": "github",
       "name": "GitHub",
       "url": "https://github.com/brunoengineer",
-      "iconSlug": "github"
+      "iconSlug": "github",
+      "iconPath": null
     },
     {
       "id": "linkedin",
       "name": "LinkedIn",
       "url": "https://www.linkedin.com/in/brunopereschristino/",
-      "iconSlug": "linkedin"
+      "iconSlug": null,
+      "iconPath": "/footer/linkedin.svg"
     }
   ]
 }

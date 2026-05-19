@@ -31,8 +31,8 @@ test.describe('Stack section', () => {
     }
   });
 
-  test('items without an iconSlug fall back to an initial', async ({ page }) => {
-    const fallbackItems = stack.filter((s) => !s.iconSlug);
+  test('items without an iconSlug or iconPath fall back to an initial', async ({ page }) => {
+    const fallbackItems = stack.filter((s) => !s.iconSlug && !('iconPath' in s && s.iconPath));
     for (const item of fallbackItems) {
       const icon = page.getByTestId(`stack-icon-${item.id}`);
       await expect(icon, `fallback icon for ${item.id}`).toContainText(item.name.charAt(0));

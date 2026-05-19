@@ -1,0 +1,14 @@
+.eyebrow {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.num {
+  color: var(--accent);
+}
+
+.slash {
+  color: var(--hairline-strong);
+}

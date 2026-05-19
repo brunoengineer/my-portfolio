@@ -1,13 +1,8 @@
 .section {
-  padding: 4rem 2rem;
-  max-width: 1200px;
+  position: relative;
+  padding: clamp(4rem, 8vh, 6rem) var(--gutter);
+  max-width: var(--content-max);
   margin: 0 auto;
-}
-
-.heading {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  margin: 0 0 2rem;
-  letter-spacing: -0.01em;
 }
 
 .grid {
@@ -32,70 +27,108 @@
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-  transition: border-color 150ms ease, transform 150ms ease;
+  position: relative;
+  background: linear-gradient(180deg, var(--bg-elev-1), var(--bg-elev-2));
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  overflow: hidden;
+  isolation: isolate;
+  transition:
+    border-color 220ms var(--ease-out),
+    transform 220ms var(--ease-out),
+    box-shadow 220ms var(--ease-out);
 }
 
 .card:hover {
-  border-color: rgba(122, 162, 255, 0.4);
-  transform: translateY(-2px);
+  border-color: rgba(77, 158, 255, 0.32);
+  transform: translateY(-4px);
+  box-shadow: 0 28px 60px -28px var(--accent-glow);
+}
+
+.spotlight {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(360px circle at var(--x, 50%) var(--y, 50%), var(--accent-soft), transparent 55%);
+  opacity: 0;
+  transition: opacity 240ms var(--ease-out);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card:hover .spotlight {
+  opacity: 1;
+}
+
+.cardBody {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: 1.25rem;
+  height: 100%;
 }
 
 .media {
   aspect-ratio: 16 / 9;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.04);
+  background: var(--bg-deep);
+  border: 1px solid var(--hairline);
 }
 
 .mediaImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .mediaPlaceholder {
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(122, 162, 255, 0.15) 0%, rgba(122, 162, 255, 0.04) 100%);
+  background:
+    radial-gradient(circle at 30% 30%, var(--accent-soft), transparent 60%),
+    linear-gradient(135deg, rgba(77, 158, 255, 0.12), rgba(110, 231, 231, 0.05));
 }
 
 .title {
-  font-size: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
   margin: 0;
   font-weight: 700;
+  letter-spacing: -0.015em;
 }
 
 .description {
   font-size: 0.95rem;
   margin: 0;
-  opacity: 0.8;
-  line-height: 1.5;
+  color: var(--text-md);
+  line-height: 1.55;
 }
 
 .links {
   display: flex;
-  gap: 0.75rem;
+  gap: 0.6rem;
   margin-top: auto;
-  padding-top: 0.25rem;
+  padding-top: 0.4rem;
 }
 
 .link {
-  font-size: 0.9rem;
-  padding: 0.4rem 0.8rem;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 6px;
-  transition: background 150ms ease, border-color 150ms ease;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 8px;
+  color: var(--text-hi);
+  background: rgba(255, 255, 255, 0.02);
+  transition:
+    background 180ms var(--ease-out),
+    border-color 180ms var(--ease-out),
+    color 180ms var(--ease-out);
 }
 
 .link:hover {
-  background: rgba(122, 162, 255, 0.1);
-  border-color: rgba(122, 162, 255, 0.5);
+  background: var(--accent-soft);
+  border-color: rgba(77, 158, 255, 0.5);
+  color: var(--accent-strong);
 }

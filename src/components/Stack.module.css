@@ -1,13 +1,8 @@
 .section {
-  padding: 4rem 2rem;
-  max-width: 1200px;
+  position: relative;
+  padding: clamp(4rem, 8vh, 6rem) var(--gutter);
+  max-width: var(--content-max);
   margin: 0 auto;
-}
-
-.heading {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  margin: 0 0 2rem;
-  letter-spacing: -0.01em;
 }
 
 .grid {
@@ -20,26 +15,33 @@
 }
 
 .item {
-  display: contents;
+  display: flex;
+  margin: 0;
 }
 
 .link {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem 0.75rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 10px;
-  transition: border-color 150ms ease, transform 150ms ease, background 150ms ease;
+  gap: 0.55rem;
+  padding: 1.1rem 0.75rem;
+  background: linear-gradient(180deg, var(--bg-elev-1), var(--bg-deep));
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  transition:
+    border-color 200ms var(--ease-out),
+    transform 200ms var(--ease-out),
+    background 200ms var(--ease-out),
+    box-shadow 200ms var(--ease-out);
 }
 
 .link:hover {
-  border-color: rgba(122, 162, 255, 0.4);
-  transform: translateY(-2px);
-  background: rgba(122, 162, 255, 0.06);
+  border-color: rgba(77, 158, 255, 0.3);
+  transform: translateY(-3px);
+  background: linear-gradient(180deg, var(--bg-elev-2), var(--bg-deep));
+  box-shadow: 0 16px 32px -22px var(--accent-glow);
 }
 
 .iconWrap {
@@ -63,23 +65,26 @@
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(122, 162, 255, 0.25), rgba(122, 162, 255, 0.05));
+  background: linear-gradient(135deg, var(--accent-soft), rgba(77, 158, 255, 0.04));
+  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  color: var(--accent-strong);
 }
 
 .name {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   text-align: center;
-  opacity: 0.85;
+  color: var(--text-md);
+  font-family: var(--font-sans);
 }
 
 @media (max-width: 480px) {
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(86px, 1fr));
     gap: 0.5rem;
   }
   .link {
-    padding: 0.75rem 0.5rem;
+    padding: 0.85rem 0.5rem;
   }
 }
