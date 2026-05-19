@@ -145,15 +145,6 @@
   opacity: 0.5;
 }
 
-.metaCommit {
-  color: var(--text-md);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 100%;
-  font-family: var(--font-mono);
-}
-
 .runBtn {
   margin-top: auto;
   display: inline-flex;

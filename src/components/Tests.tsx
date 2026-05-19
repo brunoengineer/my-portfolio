@@ -139,10 +139,6 @@ function TestCard({ card, repo }: { card: Card; repo: { owner: string; name: str
           <span>#{run.run_number}</span>
           <span className={styles.metaSep}>·</span>
           <span>{timeAgo(run.updated_at)}</span>
-          <span className={styles.metaSep}>·</span>
-          <span className={styles.metaCommit} title={run.head_commit.message}>
-            &quot;{run.head_commit.message.split('\n')[0]}&quot;
-          </span>
         </div>
       )}
 
