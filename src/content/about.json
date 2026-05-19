@@ -6,5 +6,9 @@
     { "id": "integrations", "value": "25+", "label": "integrations validated" },
     { "id": "audience", "value": "100+", "label": "sprint demo audience" },
     { "id": "cert", "value": "ISTQB", "label": "CTFL certified" }
-  ]
+  ],
+  "cv": {
+    "label": "download resume",
+    "href": "https://drive.google.com/file/d/168K3jGvOQ58GY-lWG64zLoihnrOo-m4H/view"
+  }
 }

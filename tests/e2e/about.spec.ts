@@ -24,6 +24,14 @@ test.describe('About section', () => {
       await expect(page.getByTestId(`about-stat-label-${s.id}`)).toHaveText(s.label);
     }
   });
+
+  test('cv button links to the resume URL and opens in a new tab', async ({ page }) => {
+    const cv = page.getByTestId('about-cv-link');
+    await expect(cv).toBeVisible();
+    await expect(cv).toHaveAttribute('href', about.cv.href);
+    await expect(cv).toHaveAttribute('target', '_blank');
+    await expect(cv).toHaveAttribute('rel', /noopener/);
+  });
 });
 
 test.describe('About section — mobile viewport', () => {

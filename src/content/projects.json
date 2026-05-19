@@ -16,6 +16,38 @@
     "liveUrl": "https://example.com/api-contracts"
   },
   {
+    "id": "api-contract-tests2",
+    "title": "API Contract Tests 2",
+    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
+    "image": null,
+    "githubUrl": "https://github.com/brunoengineer/example-contracts",
+    "liveUrl": "https://example.com/api-contracts"
+  },
+  {
+    "id": "api-contract-tests3",
+    "title": "API Contract Tests 3",
+    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
+    "image": null,
+    "githubUrl": "https://github.com/brunoengineer/example-contracts",
+    "liveUrl": "https://example.com/api-contracts"
+  },
+  {
+    "id": "api-contract-tests4",
+    "title": "API Contract Tests 4",
+    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
+    "image": null,
+    "githubUrl": "https://github.com/brunoengineer/example-contracts",
+    "liveUrl": "https://example.com/api-contracts"
+  },
+  {
+    "id": "api-contract-tests5",
+    "title": "API Contract Tests 5",
+    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
+    "image": null,
+    "githubUrl": "https://github.com/brunoengineer/example-contracts",
+    "liveUrl": "https://example.com/api-contracts"
+  },
+  {
     "id": "load-test-bench",
     "title": "Load Test Bench",
     "description": "K6 scenarios pushing realistic peak traffic at a staging environment, with Grafana dashboards.",
