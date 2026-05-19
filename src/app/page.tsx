@@ -2,6 +2,7 @@ import site from '@/content/site.json';
 import styles from './page.module.css';
 import Projects from '@/components/Projects';
 import Stack from '@/components/Stack';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
 
       <Projects />
       <Stack />
+      <Footer />
     </main>
   );
 }
