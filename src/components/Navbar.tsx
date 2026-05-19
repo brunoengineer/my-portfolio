@@ -9,10 +9,24 @@ export default function Navbar() {
   const [active, setActive] = useState<string>('home');
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
-    onScroll();
+    let raf = 0;
+    const ENTER = 32;
+    const EXIT = 4;
+    const update = () => {
+      const y = window.scrollY;
+      setScrolled((prev) => (prev ? y > EXIT : y > ENTER));
+      raf = 0;
+    };
+    const onScroll = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(update);
+    };
+    update();
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      if (raf) cancelAnimationFrame(raf);
+    };
   }, []);
 
   useEffect(() => {
