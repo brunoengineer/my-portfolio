@@ -1,0 +1,119 @@
+{
+  "info": {
+    "name": "Portfolio API Smoke Tests",
+    "description": "Newman-driven smoke suite against the public JSONPlaceholder API — used to demonstrate Postman + CI integration on the portfolio site.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "GET /posts/1 — single resource",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/1",
+          "protocol": "https",
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["posts", "1"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('responds 200', () => pm.response.to.have.status(200));",
+              "pm.test('returns id 1', () => pm.expect(pm.response.json().id).to.eql(1));",
+              "pm.test('has non-empty title', () => pm.expect(pm.response.json().title).to.be.a('string').and.not.empty);",
+              "pm.test('responds under 1500ms', () => pm.expect(pm.response.responseTime).to.be.below(1500));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET /users — list payload shape",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/users",
+          "protocol": "https",
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["users"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('responds 200', () => pm.response.to.have.status(200));",
+              "const body = pm.response.json();",
+              "pm.test('returns 10 users', () => pm.expect(body).to.have.lengthOf(10));",
+              "pm.test('every user has an email', () => body.forEach(u => pm.expect(u.email).to.match(/@/)));",
+              "pm.test('every user has a name', () => body.forEach(u => pm.expect(u.name).to.be.a('string').and.not.empty));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /posts — create",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\":\"qa-smoke\",\"body\":\"hello from newman\",\"userId\":1}"
+        },
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts",
+          "protocol": "https",
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["posts"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('responds 201', () => pm.response.to.have.status(201));",
+              "const body = pm.response.json();",
+              "pm.test('echoes title', () => pm.expect(body.title).to.eql('qa-smoke'));",
+              "pm.test('assigns numeric id', () => pm.expect(body.id).to.be.a('number'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "GET /posts/9999 — negative case",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/9999",
+          "protocol": "https",
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["posts", "9999"]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('responds 404', () => pm.response.to.have.status(404));"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

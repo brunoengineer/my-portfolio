@@ -16,18 +16,18 @@
     {
       "id": "api",
       "title": "API Tests",
-      "description": "Newman-driven Postman collection. Wires up once a demo API target is in place.",
+      "description": "Newman-driven Postman collection covering smoke, payload-shape, and a negative case against a public API.",
       "workflowFile": "newman.yml",
-      "command": "newman run collection.json",
-      "status": "coming-soon"
+      "command": "newman run tests/api/collection.json",
+      "status": "live"
     },
     {
       "id": "perf",
       "title": "Performance",
-      "description": "K6 load scenarios with summary thresholds. Coming once the API target is wired.",
+      "description": "K6 load scenario with thresholds on p95 latency, failure rate, and check pass rate.",
       "workflowFile": "k6.yml",
-      "command": "k6 run perf.js",
-      "status": "coming-soon"
+      "command": "k6 run tests/perf/script.js",
+      "status": "live"
     }
   ]
 }
