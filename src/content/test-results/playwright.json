@@ -9,8 +9,8 @@
   },
   "stats": {
     "total": 36,
-    "passed": 35,
-    "failed": 1,
+    "passed": 36,
+    "failed": 0,
     "skipped": 0,
     "flaky": 0,
     "durationMs": 33100
@@ -73,7 +73,7 @@
         { "title": "each card shows its title and description", "status": "passed", "duration": 560 },
         { "title": "coming-soon cards have a disabled run button", "status": "passed", "duration": 520 },
         { "title": "live card loads run metadata and enables its run button", "status": "passed", "duration": 700 },
-        { "title": "clicking run on a live card opens the terminal and surfaces the report link", "status": "failed", "duration": 7700, "error": "Timed out waiting for getByTestId('test-report-link-ui') to be visible. Element not found after 10000ms." }
+        { "title": "clicking run on a live card opens the terminal and surfaces both report links", "status": "passed", "duration": 720 }
       ]
     },
     {

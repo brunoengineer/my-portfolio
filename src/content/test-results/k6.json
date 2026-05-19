@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "runNumber": 5,
+    "branch": "main",
+    "sha": "abc12345",
+    "commitMessage": "Add custom UI report page",
+    "htmlUrl": "https://github.com/brunoengineer/my-portfolio/actions",
+    "timestamp": "2026-05-19T15:30:00.000Z"
+  },
+  "stats": {
+    "vus": 5,
+    "iterations": 96,
+    "durationMs": 20000,
+    "httpRequests": 96,
+    "failureRate": 0
+  },
+  "httpDuration": {
+    "avg": 162,
+    "min": 88,
+    "med": 152,
+    "max": 412,
+    "p90": 230,
+    "p95": 285
+  },
+  "checks": [
+    { "name": "status is 200", "passes": 96, "fails": 0, "rate": 1 },
+    { "name": "body has title", "passes": 96, "fails": 0, "rate": 1 }
+  ],
+  "thresholds": [
+    { "metric": "http_req_duration", "expression": "p(95)<800", "passed": true },
+    { "metric": "http_req_failed", "expression": "rate<0.01", "passed": true },
+    { "metric": "checks", "expression": "rate>0.99", "passed": true }
+  ]
+}

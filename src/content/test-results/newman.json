@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "runNumber": 7,
+    "branch": "main",
+    "sha": "abc12345",
+    "commitMessage": "Add custom UI report page",
+    "htmlUrl": "https://github.com/brunoengineer/my-portfolio/actions",
+    "timestamp": "2026-05-19T15:30:00.000Z"
+  },
+  "stats": {
+    "requests": 4,
+    "assertions": { "total": 14, "passed": 14, "failed": 0 },
+    "responseTime": { "avg": 180, "min": 95, "max": 410 },
+    "durationMs": 1820
+  },
+  "executions": [
+    {
+      "id": "get-posts-1",
+      "name": "GET /posts/1 — single resource",
+      "method": "GET",
+      "url": "https://jsonplaceholder.typicode.com/posts/1",
+      "status": 200,
+      "responseTime": 165,
+      "assertions": [
+        { "name": "responds 200", "passed": true },
+        { "name": "returns id 1", "passed": true },
+        { "name": "has non-empty title", "passed": true },
+        { "name": "responds under 1500ms", "passed": true }
+      ]
+    },
+    {
+      "id": "get-users",
+      "name": "GET /users — list payload shape",
+      "method": "GET",
+      "url": "https://jsonplaceholder.typicode.com/users",
+      "status": 200,
+      "responseTime": 410,
+      "assertions": [
+        { "name": "responds 200", "passed": true },
+        { "name": "returns 10 users", "passed": true },
+        { "name": "every user has an email", "passed": true },
+        { "name": "every user has a name", "passed": true }
+      ]
+    },
+    {
+      "id": "post-posts",
+      "name": "POST /posts — create",
+      "method": "POST",
+      "url": "https://jsonplaceholder.typicode.com/posts",
+      "status": 201,
+      "responseTime": 220,
+      "assertions": [
+        { "name": "responds 201", "passed": true },
+        { "name": "echoes title", "passed": true },
+        { "name": "assigns numeric id", "passed": true }
+      ]
+    },
+    {
+      "id": "get-posts-9999",
+      "name": "GET /posts/9999 — negative case",
+      "method": "GET",
+      "url": "https://jsonplaceholder.typicode.com/posts/9999",
+      "status": 404,
+      "responseTime": 95,
+      "assertions": [
+        { "name": "responds 404", "passed": true }
+      ]
+    }
+  ]
+}

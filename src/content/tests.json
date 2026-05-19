@@ -20,7 +20,8 @@
       "description": "Newman-driven Postman collection covering smoke, payload-shape, and a negative case against a public API.",
       "workflowFile": "newman.yml",
       "command": "newman run tests/api/collection.json",
-      "status": "live"
+      "status": "live",
+      "reportPath": "/reports/api/"
     },
     {
       "id": "perf",
@@ -28,7 +29,8 @@
       "description": "K6 load scenario with thresholds on p95 latency, failure rate, and check pass rate.",
       "workflowFile": "k6.yml",
       "command": "k6 run tests/perf/script.js",
-      "status": "live"
+      "status": "live",
+      "reportPath": "/reports/perf/"
     }
   ]
 }
