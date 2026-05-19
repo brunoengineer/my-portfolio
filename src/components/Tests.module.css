@@ -185,6 +185,12 @@
   gap: 0.75rem;
 }
 
+.reportLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 .reportLink {
   display: inline-flex;
   align-items: center;
@@ -193,18 +199,29 @@
   padding: 0.65rem 1rem;
   font-family: var(--font-mono);
   font-size: 0.78rem;
-  color: var(--accent-strong);
-  background: var(--accent-soft);
-  border: 1px solid rgba(77, 158, 255, 0.4);
+  color: var(--text-md);
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--hairline);
   border-radius: 10px;
-  transition: background 200ms var(--ease-out), border-color 200ms var(--ease-out), transform 200ms var(--ease-out);
+  transition: background 200ms var(--ease-out), border-color 200ms var(--ease-out), transform 200ms var(--ease-out), color 200ms var(--ease-out);
   animation: fadeUp 360ms var(--ease-out);
 }
 
 .reportLink:hover {
+  color: var(--accent-strong);
+  border-color: rgba(77, 158, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+.reportPrimary {
+  color: var(--accent-strong);
+  background: var(--accent-soft);
+  border-color: rgba(77, 158, 255, 0.4);
+}
+
+.reportPrimary:hover {
   background: rgba(77, 158, 255, 0.18);
   border-color: rgba(77, 158, 255, 0.6);
-  transform: translateY(-2px);
 }
 
 @keyframes fadeUp {

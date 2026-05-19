@@ -6,6 +6,7 @@ import tests from '@/content/tests.json';
 import styles from './Tests.module.css';
 import SectionHeading from './SectionHeading';
 import Terminal, { type TerminalLine } from './Terminal';
+import { asset } from '@/lib/asset';
 
 type WorkflowRun = {
   run_number: number;
@@ -24,6 +25,7 @@ type Card = {
   workflowFile: string;
   command: string;
   status: 'live' | 'coming-soon';
+  reportPath?: string;
 };
 
 async function fetchLatestRun(owner: string, repo: string, workflow: string): Promise<WorkflowRun | null> {
@@ -171,15 +173,28 @@ function TestCard({ card, repo }: { card: Card; repo: { owner: string; name: str
             onComplete={() => setAnimDone(true)}
           />
           {animDone && (
-            <a
-              href={run.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.reportLink}
-              data-testid={`test-report-link-${card.id}`}
-            >
-              View full report on GitHub Actions ↗
-            </a>
+            <div className={styles.reportLinks}>
+              {card.reportPath && (
+                <a
+                  href={asset(card.reportPath)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${styles.reportLink} ${styles.reportPrimary}`}
+                  data-testid={`test-report-link-${card.id}`}
+                >
+                  View HTML report ↗
+                </a>
+              )}
+              <a
+                href={run.html_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.reportLink}
+                data-testid={`test-gh-link-${card.id}`}
+              >
+                View on GitHub Actions ↗
+              </a>
+            </div>
           )}
         </div>
       )}

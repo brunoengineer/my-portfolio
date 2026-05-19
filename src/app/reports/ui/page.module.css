@@ -1,0 +1,294 @@
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: clamp(1.5rem, 3vw, 2.5rem) var(--gutter) 5rem;
+}
+
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.back,
+.ghLink {
+  font-size: 0.78rem;
+  color: var(--text-md);
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.02);
+  transition: color 180ms var(--ease-out), border-color 180ms var(--ease-out), background 180ms var(--ease-out);
+}
+
+.back:hover,
+.ghLink:hover {
+  color: var(--accent-strong);
+  border-color: rgba(77, 158, 255, 0.4);
+  background: var(--accent-soft);
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0 0 0.7rem;
+}
+
+.eyebrowNum {
+  color: var(--accent);
+}
+
+.eyebrowSlash {
+  color: var(--hairline-strong);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 0 0 1rem;
+  background: linear-gradient(120deg, #ffffff 0%, #ffffff 55%, var(--accent-strong) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.metaLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-lo);
+}
+
+.metaSep {
+  opacity: 0.5;
+}
+
+.commit {
+  margin: 0.55rem 0 0;
+  font-size: 0.92rem;
+  color: var(--text-md);
+}
+
+/* summary block --------------------------------------------------------- */
+.summary {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(180deg, var(--bg-elev-1), var(--bg-elev-2));
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 640px) {
+  .summary {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+}
+
+.chartWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statTiles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.statTile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.95rem 1.05rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+}
+
+.tilePassed { border-color: rgba(74, 222, 128, 0.22); }
+.tileFailed { border-color: rgba(248, 113, 113, 0.28); }
+.tileSkipped { border-color: rgba(148, 163, 184, 0.2); }
+.tileDuration { border-color: rgba(77, 158, 255, 0.22); }
+
+.tileValue {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+.tilePassed .tileValue { color: #4ade80; }
+.tileFailed .tileValue { color: #f87171; }
+.tileSkipped .tileValue { color: #94a3b8; }
+.tileDuration .tileValue { color: var(--accent-strong); }
+
+.tileLabel {
+  font-size: 0.7rem;
+  color: var(--text-lo);
+  letter-spacing: 0.04em;
+}
+
+/* suites ---------------------------------------------------------------- */
+.suites {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.suitesHeading {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.015em;
+  color: var(--text-hi);
+}
+
+.suite {
+  background: linear-gradient(180deg, var(--bg-elev-1), var(--bg-elev-2));
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.suiteFailed {
+  border-color: rgba(248, 113, 113, 0.32);
+  box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.08), 0 16px 32px -22px rgba(248, 113, 113, 0.25);
+}
+
+.suiteHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.9rem 1.15rem;
+  border-bottom: 1px solid var(--hairline);
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.suiteTitle {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-hi);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.suiteMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-shrink: 0;
+}
+
+.suiteCount {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-md);
+}
+
+.suitePassed { color: #4ade80; }
+.suiteSep { color: var(--text-lo); }
+
+.suiteDuration {
+  font-size: 0.75rem;
+  color: var(--text-lo);
+}
+
+.testList {
+  list-style: none;
+  padding: 0.25rem 0;
+  margin: 0;
+}
+
+.testRow {
+  display: grid;
+  grid-template-columns: 14px 1fr auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 1.15rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.025);
+}
+
+.testRow:last-child {
+  border-bottom: none;
+}
+
+.statusDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.statusPassed { background: #4ade80; box-shadow: 0 0 6px rgba(74, 222, 128, 0.5); }
+.statusFailed { background: #f87171; box-shadow: 0 0 8px rgba(248, 113, 113, 0.55); }
+.statusSkipped { background: #94a3b8; }
+.statusFlaky { background: #fbbf24; box-shadow: 0 0 6px rgba(251, 191, 36, 0.5); }
+
+.testTitle {
+  font-size: 0.86rem;
+  color: var(--text-md);
+}
+
+.testTitleFail {
+  color: var(--text-hi);
+}
+
+.testDuration {
+  font-size: 0.74rem;
+  color: var(--text-lo);
+}
+
+.testError {
+  grid-column: 2 / -1;
+  margin: 0.4rem 0 0;
+  padding: 0.7rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: #fda4a4;
+  background: rgba(248, 113, 113, 0.06);
+  border: 1px solid rgba(248, 113, 113, 0.2);
+  border-radius: 6px;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* footer ---------------------------------------------------------------- */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--hairline);
+  text-align: center;
+}
+
+.footerLine {
+  font-size: 0.74rem;
+  color: var(--text-lo);
+}

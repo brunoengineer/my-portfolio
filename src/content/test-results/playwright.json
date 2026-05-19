@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "runNumber": 17,
+    "branch": "main",
+    "sha": "abc12345",
+    "commitMessage": "Add custom UI report page",
+    "htmlUrl": "https://github.com/brunoengineer/my-portfolio/actions",
+    "timestamp": "2026-05-19T15:30:00.000Z"
+  },
+  "stats": {
+    "total": 36,
+    "passed": 35,
+    "failed": 1,
+    "skipped": 0,
+    "flaky": 0,
+    "durationMs": 33100
+  },
+  "suites": [
+    {
+      "title": "home.spec.ts",
+      "file": "tests/e2e/home.spec.ts",
+      "tests": [
+        { "title": "renders core structure", "status": "passed", "duration": 615 },
+        { "title": "shows brand and identity from site.json", "status": "passed", "duration": 623 },
+        { "title": "primary nav lists Home, About, Tests, Contact in order", "status": "passed", "duration": 642 },
+        { "title": "nav links point at in-page anchors", "status": "passed", "duration": 598 },
+        { "title": "document title reflects identity", "status": "passed", "duration": 584 },
+        { "title": "hero and nav remain visible on mobile", "status": "passed", "duration": 589 }
+      ]
+    },
+    {
+      "title": "about.spec.ts",
+      "file": "tests/e2e/about.spec.ts",
+      "tests": [
+        { "title": "renders section, heading, bio and stats", "status": "passed", "duration": 770 },
+        { "title": "renders one stat per entry in about.json", "status": "passed", "duration": 928 },
+        { "title": "each stat shows its value and label", "status": "passed", "duration": 702 },
+        { "title": "cv button links to the resume URL and opens in a new tab", "status": "passed", "duration": 629 },
+        { "title": "timeline renders heading and one item per entry", "status": "passed", "duration": 586 },
+        { "title": "each timeline entry shows its year and tag", "status": "passed", "duration": 698 },
+        { "title": "stats grid stays visible on mobile", "status": "passed", "duration": 588 }
+      ]
+    },
+    {
+      "title": "projects.spec.ts",
+      "file": "tests/e2e/projects.spec.ts",
+      "tests": [
+        { "title": "renders section, heading and grid", "status": "passed", "duration": 649 },
+        { "title": "renders one card per entry in projects.json", "status": "passed", "duration": 611 },
+        { "title": "card \"playwright-suite\" shows title, description and matching links", "status": "passed", "duration": 646 },
+        { "title": "card \"api-contract-tests\" shows title, description and matching links", "status": "passed", "duration": 654 },
+        { "title": "card \"load-test-bench\" shows title, description and matching links", "status": "passed", "duration": 604 },
+        { "title": "cards remain visible and stack on mobile", "status": "passed", "duration": 625 }
+      ]
+    },
+    {
+      "title": "stack.spec.ts",
+      "file": "tests/e2e/stack.spec.ts",
+      "tests": [
+        { "title": "renders section, heading and grid", "status": "passed", "duration": 667 },
+        { "title": "renders one item per entry in stack.json", "status": "passed", "duration": 604 },
+        { "title": "every stack item links to its tool with target=_blank", "status": "passed", "duration": 1200 },
+        { "title": "items without an iconSlug or iconPath fall back to an initial", "status": "passed", "duration": 556 },
+        { "title": "grid stays visible and renders all items on mobile", "status": "passed", "duration": 677 }
+      ]
+    },
+    {
+      "title": "tests.spec.ts",
+      "file": "tests/e2e/tests.spec.ts",
+      "tests": [
+        { "title": "renders section, heading and grid", "status": "passed", "duration": 580 },
+        { "title": "renders one card per entry in tests.json", "status": "passed", "duration": 540 },
+        { "title": "each card shows its title and description", "status": "passed", "duration": 560 },
+        { "title": "coming-soon cards have a disabled run button", "status": "passed", "duration": 520 },
+        { "title": "live card loads run metadata and enables its run button", "status": "passed", "duration": 700 },
+        { "title": "clicking run on a live card opens the terminal and surfaces the report link", "status": "failed", "duration": 7700, "error": "Timed out waiting for getByTestId('test-report-link-ui') to be visible. Element not found after 10000ms." }
+      ]
+    },
+    {
+      "title": "contact.spec.ts",
+      "file": "tests/e2e/contact.spec.ts",
+      "tests": [
+        { "title": "renders section, heading and grid", "status": "passed", "duration": 609 },
+        { "title": "renders one card per entry in contact.json", "status": "passed", "duration": 601 },
+        { "title": "each channel link uses the correct href and target", "status": "passed", "duration": 676 },
+        { "title": "contact grid stays visible on mobile", "status": "passed", "duration": 606 }
+      ]
+    },
+    {
+      "title": "footer.spec.ts",
+      "file": "tests/e2e/footer.spec.ts",
+      "tests": [
+        { "title": "renders footer with socials list and copy", "status": "passed", "duration": 649 },
+        { "title": "renders one social per entry in footer.json", "status": "passed", "duration": 630 },
+        { "title": "every social links to its url with target=_blank and accessible name", "status": "passed", "duration": 653 },
+        { "title": "footer stays visible on mobile", "status": "passed", "duration": 610 }
+      ]
+    }
+  ]
+}

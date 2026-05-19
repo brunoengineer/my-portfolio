@@ -11,7 +11,8 @@
       "description": "Playwright end-to-end coverage across every component on this site, run on every push and PR.",
       "workflowFile": "playwright.yml",
       "command": "npm run test:e2e",
-      "status": "live"
+      "status": "live",
+      "reportPath": "/reports/ui/"
     },
     {
       "id": "api",
