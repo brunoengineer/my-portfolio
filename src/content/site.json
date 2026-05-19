@@ -5,7 +5,10 @@
   "nav": [
     { "id": "home", "label": "Home", "href": "#home" },
     { "id": "about", "label": "About", "href": "#about" },
+    { "id": "projects", "label": "Projects", "href": "#projects" },
+    { "id": "stack", "label": "Stack", "href": "#stack" },
     { "id": "tests", "label": "Tests", "href": "#tests" },
+    { "id": "testimonials", "label": "Testimonials", "href": "#testimonials" },
     { "id": "contact", "label": "Contact", "href": "#contact" }
   ]
 }

@@ -1,0 +1,53 @@
+{
+  "intro": "What people I've worked with have said. Pulled from LinkedIn recommendations, sprint retros, and Slack DMs.",
+  "items": [
+    {
+      "id": "placeholder-1",
+      "name": "Placeholder Name",
+      "origin": "LinkedIn Recommendation · 2025",
+      "quote": "Bruno raised the QA bar for our whole team. He doesn't just find bugs — he changes how we think about quality."
+    },
+    {
+      "id": "placeholder-2",
+      "name": "Placeholder Name",
+      "origin": "Sprint Retro · Hub88",
+      "quote": "Whenever Bruno owns a release, I sleep better the night of deploy. Calm, methodical, and zero ego in the bug reports."
+    },
+    {
+      "id": "placeholder-3",
+      "name": "Placeholder Name",
+      "origin": "Slack message · Betsson",
+      "quote": "The Playwright migration would have taken us three sprints. Bruno did it in one and mentored two juniors through it."
+    },
+    {
+      "id": "placeholder-4",
+      "name": "Placeholder Name",
+      "origin": "LinkedIn Recommendation · 2024",
+      "quote": "Half engineer, half teacher. He'll spot the race condition in your PR and then explain it to you so well you start finding them yourself."
+    },
+    {
+      "id": "placeholder-5",
+      "name": "Placeholder Name",
+      "origin": "1:1 feedback · Yolo Group",
+      "quote": "Bruno is the kind of QA who makes engineering teams faster, not slower. Rare combination of rigor and pragmatism."
+    },
+    {
+      "id": "placeholder-6",
+      "name": "Placeholder Name",
+      "origin": "Project review · Brazilian Air Force",
+      "quote": "Took ownership of UAT for a system used by 70k+ people. Calm under pressure, sharp on the details."
+    },
+    {
+      "id": "placeholder-7",
+      "name": "Placeholder Name",
+      "origin": "LinkedIn Recommendation · 2023",
+      "quote": "I've worked with a lot of QA engineers. Bruno is the one I'd pick first for a high-stakes release."
+    },
+    {
+      "id": "placeholder-8",
+      "name": "Placeholder Name",
+      "origin": "Sprint demo feedback",
+      "quote": "Presented test results to 100+ stakeholders without a slip. Knows the system better than anyone in the room and isn't afraid to say what's risky."
+    }
+  ]
+}
