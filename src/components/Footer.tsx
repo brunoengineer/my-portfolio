@@ -1,5 +1,6 @@
 import footer from '@/content/footer.json';
 import styles from './Footer.module.css';
+import { asset } from '@/lib/asset';
 
 type Social = {
   id: string;
@@ -41,7 +42,7 @@ export default function Footer() {
                 <span className={styles.iconWrap} data-testid={`footer-social-icon-${s.id}`}>
                   {s.iconPath || s.iconSlug ? (
                     <img
-                      src={s.iconPath ?? `https://cdn.simpleicons.org/${s.iconSlug}`}
+                      src={s.iconPath ? asset(s.iconPath) : `https://cdn.simpleicons.org/${s.iconSlug}`}
                       alt=""
                       className={styles.icon}
                       loading="lazy"

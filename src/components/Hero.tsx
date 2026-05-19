@@ -4,6 +4,7 @@ import { motion, useReducedMotion, type Variants } from 'framer-motion';
 import site from '@/content/site.json';
 import styles from './Hero.module.css';
 import Eyebrow from './Eyebrow';
+import { asset } from '@/lib/asset';
 
 const container: Variants = {
   hidden: { opacity: 1 },
@@ -74,7 +75,7 @@ export default function Hero() {
             <span className={styles.photoGlow} aria-hidden="true" />
             <span className={styles.photoRing} aria-hidden="true" />
             <img
-              src="/me.jpg"
+              src={asset('/me.jpg')}
               alt={site.name}
               className={styles.photo}
               width={360}

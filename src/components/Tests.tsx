@@ -30,8 +30,15 @@ async function fetchLatestRun(owner: string, repo: string, workflow: string): Pr
   const key = `gh-run-${owner}-${repo}-${workflow}`;
   try {
     const cached = sessionStorage.getItem(key);
-    if (cached) return JSON.parse(cached);
-  } catch {}
+    if (cached) {
+      const parsed = JSON.parse(cached) as WorkflowRun;
+      // only trust the cache for terminal-state runs; otherwise evict and refetch
+      if (parsed?.status === 'completed') return parsed;
+      sessionStorage.removeItem(key);
+    }
+  } catch {
+    try { sessionStorage.removeItem(key); } catch {}
+  }
   const r = await fetch(
     `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/runs?per_page=1`,
     { headers: { Accept: 'application/vnd.github+json' } }
@@ -39,7 +46,7 @@ async function fetchLatestRun(owner: string, repo: string, workflow: string): Pr
   if (!r.ok) return null;
   const data = await r.json();
   const run = data.workflow_runs?.[0] ?? null;
-  if (run) {
+  if (run && run.status === 'completed') {
     try { sessionStorage.setItem(key, JSON.stringify(run)); } catch {}
   }
   return run;

@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useReducedMotion, type Variants } from 'framer
 import stack from '@/content/stack.json';
 import styles from './Stack.module.css';
 import SectionHeading from './SectionHeading';
+import { asset } from '@/lib/asset';
 
 type StackItem = {
   id: string;
@@ -97,7 +98,7 @@ export default function Stack() {
               <span className={styles.iconWrap} data-testid={`stack-icon-${s.id}`}>
                 {s.iconPath || s.iconSlug ? (
                   <img
-                    src={s.iconPath ?? `https://cdn.simpleicons.org/${s.iconSlug}`}
+                    src={s.iconPath ? asset(s.iconPath) : `https://cdn.simpleicons.org/${s.iconSlug}`}
                     alt=""
                     className={styles.icon}
                     loading="lazy"
