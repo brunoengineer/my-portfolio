@@ -62,15 +62,23 @@ test.describe('Tests section', () => {
     await expect(page.getByTestId(`test-run-${id}`)).toBeEnabled();
   });
 
-  test('clicking run on a live card opens the terminal and surfaces the report link', async ({ page }) => {
+  test('clicking run on a live card opens the terminal and surfaces both report links', async ({ page }) => {
     const live = tests.cards.find((c) => c.status === 'live');
     if (!live) test.skip();
     const id = live!.id;
     await page.getByTestId(`test-run-${id}`).click();
     await expect(page.getByTestId(`test-terminal-${id}`)).toBeVisible();
-    const link = page.getByTestId(`test-report-link-${id}`);
-    await expect(link).toBeVisible({ timeout: 10_000 });
-    await expect(link).toHaveAttribute('href', /github\.com.*\/actions\/runs\/999/);
-    await expect(link).toHaveAttribute('target', '_blank');
+
+    const ghLink = page.getByTestId(`test-gh-link-${id}`);
+    await expect(ghLink).toBeVisible({ timeout: 10_000 });
+    await expect(ghLink).toHaveAttribute('href', /github\.com.*\/actions\/runs\/999/);
+    await expect(ghLink).toHaveAttribute('target', '_blank');
+
+    if (live!.reportPath) {
+      const reportLink = page.getByTestId(`test-report-link-${id}`);
+      await expect(reportLink).toBeVisible();
+      await expect(reportLink).toHaveAttribute('href', new RegExp(live!.reportPath.replace(/\//g, '\\/') + '$'));
+      await expect(reportLink).toHaveAttribute('target', '_blank');
+    }
   });
 });
