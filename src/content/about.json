@@ -10,5 +10,59 @@
   "cv": {
     "label": "download resume",
     "href": "https://drive.google.com/file/d/168K3jGvOQ58GY-lWG64zLoihnrOo-m4H/view"
+  },
+  "timeline": {
+    "heading": "Career timeline",
+    "entries": [
+      {
+        "id": "af-2013",
+        "year": "2013",
+        "tag": "Air Force",
+        "headline": "QA & Systems Support · 2nd Lieutenant",
+        "body": "Started in the Brazilian Air Force. Monitoring mission-critical applications, root-cause analysis, defect management on national logistics software."
+      },
+      {
+        "id": "af-2015",
+        "year": "2015",
+        "tag": "Data QA",
+        "headline": "Data Quality Analyst · 1st Lieutenant",
+        "body": "Large-scale data validation and QC for national logistics data. SQL and Excel reporting to support procurement decisions."
+      },
+      {
+        "id": "af-2019",
+        "year": "2019",
+        "tag": "Captain",
+        "headline": "QA Analyst — Captain · FGV PM Specialisation",
+        "body": "Test design, execution and UAT for SILOMS Aquisição (70k+ users). Defect tracking via Trello. Specialisation in Project Management from FGV."
+      },
+      {
+        "id": "freelance-2022",
+        "year": "2022",
+        "tag": "Freelance",
+        "headline": "Freelance Web Designer · Google UX · CS50",
+        "body": "Responsive web work in JavaScript, HTML, CSS, React. Owned the full SDLC across projects. Google UX Design certificate; CS50 fundamentals."
+      },
+      {
+        "id": "umich-2023",
+        "year": "2023",
+        "tag": "Web Dev",
+        "headline": "Web Development Specialisation, U. Michigan",
+        "body": "Deepened front-end skills: React, validation, debugging, cross-browser testing — alongside ongoing freelance delivery."
+      },
+      {
+        "id": "hub88-2024",
+        "year": "2024",
+        "tag": "Hub88",
+        "headline": "Integration & QA Specialist · Yolo Group",
+        "body": "Validated 25+ third-party client integrations to Hub88 APIs. Postman, Elasticsearch-Kibana, JIRA. Monitored 30+ casinos and game providers."
+      },
+      {
+        "id": "betsson-2025",
+        "year": "2025",
+        "tag": "Betsson",
+        "headline": "QA → Senior QA · ISTQB CTFL · IBM Full-Stack",
+        "body": "Promoted at Hub88 to QA Engineer (Cypress → Playwright migration), then joined Betsson Estonia as Senior QA Engineer. ISTQB CTFL certified; IBM Full-Stack specialisation."
+      }
+    ]
   }
 }

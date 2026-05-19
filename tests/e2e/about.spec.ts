@@ -32,6 +32,19 @@ test.describe('About section', () => {
     await expect(cv).toHaveAttribute('target', '_blank');
     await expect(cv).toHaveAttribute('rel', /noopener/);
   });
+
+  test('timeline renders heading and one item per entry', async ({ page }) => {
+    await expect(page.getByTestId('timeline-heading')).toHaveText(about.timeline.heading);
+    const items = page.getByTestId(/^timeline-item-/);
+    await expect(items).toHaveCount(about.timeline.entries.length);
+  });
+
+  test('each timeline entry shows its year and tag', async ({ page }) => {
+    for (const e of about.timeline.entries) {
+      await expect(page.getByTestId(`timeline-year-${e.id}`)).toHaveText(e.year);
+      await expect(page.getByTestId(`timeline-tag-${e.id}`)).toHaveText(e.tag);
+    }
+  });
 });
 
 test.describe('About section — mobile viewport', () => {

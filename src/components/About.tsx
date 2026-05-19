@@ -4,6 +4,7 @@ import { motion, useReducedMotion, type Variants } from 'framer-motion';
 import about from '@/content/about.json';
 import styles from './About.module.css';
 import SectionHeading from './SectionHeading';
+import Timeline from './Timeline';
 
 type Stat = { id: string; value: string; label: string };
 
@@ -96,6 +97,10 @@ export default function About() {
           ))}
         </motion.ul>
       </div>
+
+      {about.timeline && (
+        <Timeline heading={about.timeline.heading} entries={about.timeline.entries} />
+      )}
     </section>
   );
 }
