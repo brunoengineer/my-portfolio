@@ -2,52 +2,64 @@
   "intro": "What people I've worked with have said. Pulled from LinkedIn recommendations, sprint retros, and Slack DMs.",
   "items": [
     {
-      "id": "placeholder-1",
-      "name": "Placeholder Name",
-      "origin": "LinkedIn Recommendation · 2025",
-      "quote": "Bruno raised the QA bar for our whole team. He doesn't just find bugs — he changes how we think about quality."
+      "id": "jovany-cardona",
+      "name": "Jovany Cardona",
+      "origin": "Leader Feedback · Lead Engineering",
+      "quote": "It is gratifying to work with someone who loves what he does, with someone who enjoys their daily activities and continually seeks to add value to people, team, processes and company. Thanks Bruno, for your excellent professionalism and dedication."
     },
     {
-      "id": "placeholder-2",
-      "name": "Placeholder Name",
-      "origin": "Sprint Retro · Hub88",
-      "quote": "Whenever Bruno owns a release, I sleep better the night of deploy. Calm, methodical, and zero ego in the bug reports."
+      "id": "priyantha-gunasekara",
+      "name": "Priyantha Gunasekara",
+      "origin": "Coworker Kudos · BE Dev",
+      "quote": "Thank you for always approaching every challenge with such analytical clarity and determination. Your eagerness to learn new tools, improve workflows without expecting anything in return, and support everyone around you truly sets you apart. You're an incredible QA engineer and an inspiring problem solver, your impact goes far beyond what you see each day."
     },
     {
-      "id": "placeholder-3",
-      "name": "Placeholder Name",
-      "origin": "Slack message · Betsson",
-      "quote": "The Playwright migration would have taken us three sprints. Bruno did it in one and mentored two juniors through it."
+      "id": "jathin-ponnamparambath",
+      "name": "Jathin Ponnamparambath",
+      "origin": "Coworker Kudos · Senior QA Engineer",
+      "quote": "Hey Bruno, I really appreciate the initiative you're taking with the new approach in Jira for test case management! It's great to see how you're continuously learning and improving. The way you took the time to learn and later discuss the interview questions I had asked shows real enthusiasm and commitment. Also, your willingness to support the team with doubts, guide Valeria on the core platform, and lend a helping hand with test support when extra hands are needed is truly appreciated. Your contributions to the QA process documentations in Confluence are also super valuable. Keep up the awesome work!"
     },
     {
-      "id": "placeholder-4",
-      "name": "Placeholder Name",
-      "origin": "LinkedIn Recommendation · 2024",
-      "quote": "Half engineer, half teacher. He'll spot the race condition in your PR and then explain it to you so well you start finding them yourself."
+      "id": "zakera-jafferi",
+      "name": "Zakera Jafferi",
+      "origin": "Coworker Kudos · CS Agent",
+      "quote": "I know it's super late now but honestly Bruno the session that you arranged for the CS Team explaining API & Wallet API was perfect in every way. The idea that you came up with and the explanation both were 10/10."
     },
     {
-      "id": "placeholder-5",
-      "name": "Placeholder Name",
-      "origin": "1:1 feedback · Yolo Group",
-      "quote": "Bruno is the kind of QA who makes engineering teams faster, not slower. Rare combination of rigor and pragmatism."
+      "id": "monika-ramasauskaite",
+      "name": "Monika Ramašauskaitė",
+      "origin": "Coworker Kudos · CS Manager",
+      "quote": "Master of API knowledge. Thanks so much for the training sessions! The team really appreciated how clear and engaging you made it, and we all found it super helpful. You did an awesome job explaining everything and making it easy. You are an AMAAZING teacher!"
     },
     {
-      "id": "placeholder-6",
-      "name": "Placeholder Name",
-      "origin": "Project review · Brazilian Air Force",
-      "quote": "Took ownership of UAT for a system used by 70k+ people. Calm under pressure, sharp on the details."
+      "id": "stephan-lanberg",
+      "name": "Stephan Lanberg",
+      "origin": "Coworker Kudos · Integration Specialist",
+      "quote": "Bruno, for being supportive and explaining how to perform during our first steps. For writing documentation and always being there for others, Bruno is an inspirational example of someone who genuinely wants to help. For supporting new hires and help them to feel welcomed in the team."
     },
     {
-      "id": "placeholder-7",
-      "name": "Placeholder Name",
-      "origin": "LinkedIn Recommendation · 2023",
-      "quote": "I've worked with a lot of QA engineers. Bruno is the one I'd pick first for a high-stakes release."
+      "id": "arina-sing",
+      "name": "Arina Sing",
+      "origin": "Coworker Kudos · Integration Specialist",
+      "quote": "Shout out to Bruno! (for president hehe) His self-lead and organized Confluence pages is helping thousands of people around the globe haha, but jokes aside, life saver! Thank you, Bruno"
     },
     {
-      "id": "placeholder-8",
-      "name": "Placeholder Name",
-      "origin": "Sprint demo feedback",
-      "quote": "Presented test results to 100+ stakeholders without a slip. Knows the system better than anyone in the room and isn't afraid to say what's risky."
+      "id": "joshua-m",
+      "name": "Joshua M.",
+      "origin": "LinkedIn Recommendation · QA Engineer",
+      "quote": "Working with Bruno at Hub88 was a great experience. Bruno's technical depth, willingness to support others, and ability to bring clarity to complex challenges made a strong impact on the team. Bruno was also a consistent source of motivation and collaboration throughout our time working together."
+    },
+    {
+      "id": "hugo-kivi",
+      "name": "Hugo Kivi",
+      "origin": "LinkedIn Recommendation · BE Dev",
+      "quote": "Bruno and I worked on the same team at Yolo (Hub88), where I was a backend engineer and he handled QA. He is the kind of QA engineer backend developers actually want to work with — he wasn't satisfied with confirming outputs match expectations; he wanted to understand what was happening under the hood, which raised the quality of every bug report and technical conversation we had. He also pushed consistently to automate QA processes by default. Approachable, technically curious, and visibly motivated by his own engineering work outside the job. Strong addition to any team."
+    },
+    {
+      "id": "brunna-silva",
+      "name": "Brunna Silva",
+      "origin": "LinkedIn Recommendation · Social Media Specialist",
+      "quote": "Bruno Peres has been an outstanding presence during my time at Yolo Group, where we worked as coworkers in different departments. As a QA Engineer, Bruno distinguishes himself through his sense of responsibility and his systemic vision, both from a project and process perspective. He can quickly grasp the broader context of his work, ensuring that quality assurance seamlessly integrates with every stage of development. Bruno's commitment to continuous learning is inspiring; he consistently seeks out new knowledge and technology, which he then shares with the team."
     }
   ]
 }
