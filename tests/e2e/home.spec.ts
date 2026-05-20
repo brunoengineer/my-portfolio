@@ -15,7 +15,7 @@ test.describe('Home page', () => {
     await expect(page.getByTestId('brand')).toHaveText('Bruno Peres');
     await expect(page.getByTestId('hero-name')).toHaveText('Bruno Peres');
     await expect(page.getByTestId('hero-role')).toHaveText('QA Engineer');
-    await expect(page.getByTestId('hero-tagline')).toHaveText('Confidence for each release');
+    await expect(page.getByTestId('hero-tagline')).toHaveText('Engineering confidence into every release');
   });
 
   test('primary nav lists all seven sections in order', async ({ page }) => {
