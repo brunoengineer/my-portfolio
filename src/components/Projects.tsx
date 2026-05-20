@@ -5,6 +5,7 @@ import { motion, useReducedMotion, type Variants } from 'framer-motion';
 import projects from '@/content/projects.json';
 import styles from './Projects.module.css';
 import SectionHeading from './SectionHeading';
+import { asset } from '@/lib/asset';
 
 type Project = {
   id: string;
@@ -47,7 +48,7 @@ function ProjectCard({ project }: { project: Project }) {
       <div className={styles.cardBody}>
         <div className={styles.media} data-testid={`project-image-${project.id}`}>
           {project.image ? (
-            <img src={project.image} alt="" className={styles.mediaImg} />
+            <img src={asset(project.image)} alt="" className={styles.mediaImg} />
           ) : (
             <div className={styles.mediaPlaceholder} aria-hidden="true" />
           )}

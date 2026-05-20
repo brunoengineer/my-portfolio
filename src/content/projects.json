@@ -1,58 +1,50 @@
 [
   {
-    "id": "playwright-suite",
-    "title": "Playwright Test Suite",
-    "description": "End-to-end coverage for a multi-step checkout flow, integrated into CI with retry and trace artifacts.",
-    "image": null,
-    "githubUrl": "https://github.com/brunoengineer/example-playwright",
+    "id": "qa-agents",
+    "title": "QA AI Agents",
+    "description": "Agents and Skills built for GitHub Copilot and Claude Code, supporting test generation, execution, and reporting tools.",
+    "image": "/img/qa-agents.png",
+    "githubUrl": "https://github.com/brunoengineer/qa-agent-hub",
     "liveUrl": null
   },
   {
-    "id": "api-contract-tests",
-    "title": "API Contract Tests",
-    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
-    "image": null,
-    "githubUrl": "https://github.com/brunoengineer/example-contracts",
-    "liveUrl": "https://example.com/api-contracts"
+    "id": "qa-knowledge-base",
+    "title": "QA Knowledge Base",
+    "description": "A knowledge base of best practices, patterns, and anti-patterns for software testing and quality assurance.",
+    "image": "/img/qaKnowledgeHub.png",
+    "githubUrl": "https://github.com/brunoengineer/qaConcepts",
+    "liveUrl": null
   },
   {
-    "id": "api-contract-tests2",
-    "title": "API Contract Tests 2",
-    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
-    "image": null,
-    "githubUrl": "https://github.com/brunoengineer/example-contracts",
-    "liveUrl": "https://example.com/api-contracts"
+    "id": "web-reporter",
+    "title": "UI Test Reporter",
+    "description": "A Chrome Extension project created to help QA engineers generate reports with richer technical information, giving teams better visibility into issues while improving communication across development and testing workflows.",
+    "image": "/img/web-reporter.gif",
+    "githubUrl": "https://github.com/brunoengineer/web-reporter",
+    "liveUrl": null
   },
   {
-    "id": "api-contract-tests3",
-    "title": "API Contract Tests 3",
-    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
-    "image": null,
-    "githubUrl": "https://github.com/brunoengineer/example-contracts",
-    "liveUrl": "https://example.com/api-contracts"
+    "id": "decide-automate",
+    "title": "Decide & Automate",
+    "description": "A project focused on automating decision-making processes using TestRail decision tables.",
+    "image": "/img/decideAutomate.png",
+    "githubUrl": "https://github.com/brunoengineer/decideAutomate",
+    "liveUrl": "https://brunoengineer.github.io/decideAutomate/"
   },
   {
-    "id": "api-contract-tests4",
-    "title": "API Contract Tests 4",
-    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
-    "image": null,
-    "githubUrl": "https://github.com/brunoengineer/example-contracts",
-    "liveUrl": "https://example.com/api-contracts"
+    "id": "har-filter",
+    "title": "HAR Filter",
+    "description": "A tool for filtering and analyzing HTTP Archive (HAR) files to extract meaningful insights.",
+    "image": "/img/har-filter.png",
+    "githubUrl": "https://github.com/brunoengineer/har-filter",
+    "liveUrl": "https://brunoengineer.github.io/har-filter/"
   },
   {
-    "id": "api-contract-tests5",
-    "title": "API Contract Tests 5",
-    "description": "Postman + Newman regression pack pinned to a JSON schema, run nightly and on every PR.",
-    "image": null,
-    "githubUrl": "https://github.com/brunoengineer/example-contracts",
-    "liveUrl": "https://example.com/api-contracts"
-  },
-  {
-    "id": "load-test-bench",
-    "title": "Load Test Bench",
-    "description": "K6 scenarios pushing realistic peak traffic at a staging environment, with Grafana dashboards.",
-    "image": null,
-    "githubUrl": null,
-    "liveUrl": "https://example.com/load-bench"
+    "id": "my-portfolio",
+    "title": "My Portfolio",
+    "description": "A personal interactive portfolio website showcasing my projects and skills.",
+    "image": "/img/portfolio.png",
+    "githubUrl": "https://github.com/brunoengineer/my-portfolio",
+    "liveUrl": "https://brunoengineer.github.io/my-portfolio/"
   }
 ]
