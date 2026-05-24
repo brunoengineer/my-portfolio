@@ -1,5 +1,9 @@
 # Bruno Peres — Portfolio
 
+<p align="center">
+  <img src="public/homepage.gif" alt="Portfolio homepage preview" width="100%" />
+</p>
+
 QA Engineer portfolio site. Next.js 15 (App Router, TypeScript, CSS Modules), Framer Motion for the motion layer, exported as static HTML and deployed to GitHub Pages.
 
 Live: **https://brunoengineer.github.io/my-portfolio/**
